@@ -9,9 +9,6 @@ import random
 from typing import List, Tuple, Optional
 from copy import deepcopy
 
-# ============================================================================
-# FUNCTIONAL CORE - Pure Functions (No Side Effects)
-# ============================================================================
 
 def create_board(size: int = 4) -> List[List[int]]:
     """Create an empty board of given size."""
@@ -135,10 +132,6 @@ def game_over(board: List[List[int]]) -> bool:
     """Check if the game is over (no moves possible)."""
     return not can_move(board)
 
-
-# ============================================================================
-# GUI IMPLEMENTATION
-# ============================================================================
 
 class Game2048:
     """2048 Game with Tkinter GUI"""
@@ -367,10 +360,6 @@ class Game2048:
         self.game_won = False
         self.update_ui()
 
-
-# ============================================================================
-# MAIN ENTRY POINT
-# ============================================================================
 
 def main():
     """Main function to run the game."""
